@@ -2,7 +2,7 @@
 #
 #
 #
-export PROJECT_TYPE="none"
+export PROJECT_TYPE="library"
 
 
 #
@@ -33,5 +33,17 @@ export PROJECT_EXTENSIONS="c"
 #
 #
 export MULLE_SDE_CRAFT_TARGET="craftorder"
+
+
+#
+#
+#
+export TEST_PROJECT_NAME="mulle-freetype"
+
+
+#
+#
+#
+export PROJECT_SOURCE_DIR="src"
 
 
