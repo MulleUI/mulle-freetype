@@ -1,0 +1,36 @@
+## Add
+
+mulle-freetype is a dependency convenience that does not produce a library.
+It bundles [freetype](https://freetype.org/) and
+[harfbuzz](https://github.com/harfbuzz/harfbuzz) with the proper build
+settings (craftinfo) for use in mulle-sde projects.
+
+Add it with `no-actual-build` so its subdependencies (freetype, harfbuzz) are
+still traversed and built, but mulle-freetype itself is not:
+
+``` bash
+mulle-sde dependency add \
+   --c \
+   --marks no-actual-build,no-actual-link,no-all-load,no-cmake-loader,no-cmake-searchpath,no-header,no-import,no-link \
+   github:MulleUI/mulle-freetype
+```
+
+Since mulle-freetype produces no library, you must also add `freetype` as a
+link library in your project:
+
+``` bash
+mulle-sde library add freetype
+mulle-sde library mark freetype no-header
+mulle-sde library mark freetype no-all-load
+mulle-sde library set freetype aliases "freetyped,freetype"
+```
+
+The aliases ensure the Debug build (`libfreetyped.a`) is found as well as
+the Release build (`libfreetype.a`). On Linux, the system `libfreetype.so`
+will typically be found first.
+
+> **Why `no-actual-build` instead of `no-build`?**
+> `no-build` removes the node from the craftorder entirely, preventing
+> traversal of its sourcetree. `no-actual-build` keeps the node in the
+> craftorder so freetype, harfbuzz and their craftinfo are built as part
+> of your project, but skips running cmake on mulle-freetype itself.

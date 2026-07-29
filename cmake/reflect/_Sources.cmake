@@ -7,9 +7,4 @@ if( MULLE_TRACE_INCLUDE)
    MESSAGE( STATUS "# Include \"${CMAKE_CURRENT_LIST_FILE}\"" )
 endif()
 
-#
-# contents selected with patternfile ??-source--sources
-#
-set( SOURCES
-src/mulle-freetype.c
-)
+message( FATAL_ERROR " No sources found. `mulle-sde environment set MULLE_MATCH_TO_CMAKE_SOURCES_FILE NONE`, if this is intentional")

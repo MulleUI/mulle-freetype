@@ -2,7 +2,7 @@
 #
 #
 #
-export PROJECT_TYPE="library"
+export PROJECT_TYPE="none"
 
 
 #
@@ -45,5 +45,11 @@ export TEST_PROJECT_NAME="mulle-freetype"
 #
 #
 export PROJECT_SOURCE_DIR="src"
+
+
+#
+#
+#
+export PROJECT_ASSET_DIR="DEFAULT"
 
 

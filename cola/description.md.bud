@@ -1,0 +1,17 @@
+
+# mulle-freetype
+
+#### ⌨️ mulle-freetype is a mulle-sde dependency convenience
+
+This project is nothing but a dependency convenience for mulle-sde projects
+that use [freetype](https://freetype.org/) with [harfbuzz](//github.com/harfbuzz/harfbuzz).
+It does not build a library itself.
+
+### Linux
+
+On Linux it uses the system supplied harfbuzz for faster compilation.
+
+### Windows/Darwin
+
+Build harfbuzz together with freetype.
+
