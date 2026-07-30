@@ -1,7 +1,7 @@
 {
    project =
    {
-      description="⌨️ mulle-freetype is a mulle-sde dependency convenience for freetype and harfbuzz";
+      description="⌨️ mulle-freetype is a mulle-sde dependency convenience";
       domain="github";
       language="c";
       dialect="c";
@@ -9,12 +9,18 @@
       user="MulleUI";
       repo="mulle-freetype";
       homepage="https://github.com/MulleUI/mulle-freetype";
-      license="BSD-3-Clause";
+      license="UNLICENSED";
    };
    dependencies =
    (
       {
-         description="A freely available software library to render fonts";
+         domain="github";
+         name="harfbuzz";
+         repo="harfbuzz";
+         url="https://github.com/harfbuzz/harfbuzz";
+         user="harfbuzz";
+      },
+      {
          domain="github";
          name="freetype";
          repo="freetype";
@@ -22,12 +28,18 @@
          user="MulleUI";
       },
       {
-         description="OpenType text shaping engine";
          domain="github";
-         name="harfbuzz";
-         repo="harfbuzz";
-         url="https://github.com/harfbuzz/harfbuzz";
-         user="harfbuzz";
+         name="zlib";
+         repo="zlib";
+         url="https://github.com/madler/zlib";
+         user="madler";
+      },
+      {
+         domain="github";
+         name="libpng";
+         repo="libpng";
+         url="https://github.com/glennrp/libpng";
+         user="glennrp";
       }
    );
 }
