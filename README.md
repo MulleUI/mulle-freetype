@@ -1,5 +1,7 @@
 # mulle-freetype
 
+Part of [MulleUI](https://github.com/MulleUI) — UIKit-shaped modular GUI libraries for mulle-objc.
+
 #### ⌨️ mulle-freetype is a mulle-sde dependency convenience
 
 
@@ -25,6 +27,7 @@ Build harfbuzz together with freetype.
 | Release Version                                       | Release Notes  | AI Documentation
 |-------------------------------------------------------|----------------|---------------
 | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleUI/mulle-freetype.svg) [![Build Status](https://github.com/MulleUI/mulle-freetype/workflows/CI/badge.svg)](//github.com/MulleUI/mulle-freetype/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for mulle-freetype](https://deepwiki.com/MulleUI/mulle-freetype)
+
 
 
 
