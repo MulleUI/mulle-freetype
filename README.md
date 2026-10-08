@@ -1,7 +1,5 @@
 # mulle-freetype
 
-Part of [MulleUI](https://github.com/MulleUI) — UIKit-shaped modular GUI libraries for mulle-objc.
-
 #### ⌨️ mulle-freetype is a mulle-sde dependency convenience
 
 
